@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+  overflow: hidden;
+}
+
+body {
+  background: rgb(61, 6, 31);
+  color: white;
+}
+
+.game_container {
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .compteur_container {
+    display: flex;
+    justify-content: space-around;
+    border: 3px solid red;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    padding: 15px 20px;
+
+    .compteur {
+      padding-right: 30vh;
+      letter-spacing: 2px;
+
+      span {
+        padding-left: 10px;
+      }
+    }
+
+    .btn_start {
+      font-size: 20px;
+      text-align: center;
+      color: red;
+      background-color: white;
+      border: 1px solid orangered;
+      border-radius: 5px;
+      padding: 10px 40px;
+      cursor: pointer;
+    }
+    .btn_start:active {
+      transform: scale(0.9);
+    }
+  }
+}
+//popup pas encore été mis car manque de temps
+.popup-content {
+  background-color: rgba(158, 24, 24, 0.192);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+
+  .GameOver {
+    background: rgba(158, 24, 24, 0.192);
+    color: white;
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.192);
+    padding: 30px;
+    text-align: center;
+
+    button {
+      background: white;
+      cursor: pointer;
+      border: 0;
+      margin-top: 10px;
+      padding: 10px 40px;
+      font-size: 20px;
+      box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.192);
+    }
+
+    button:hover {
+      transform: scale(1.2);
+      transition: 0.5s;
+    }
+
+    button:active {
+      transform: scale(0.98);
+      transition: 0.2s;
+    }
+  }
+}
+
+canvas {
+  background: rgb(0, 0, 0);
+  border: 3px solid red;
+  border-radius: 5px;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="video game : shooter" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Pew-Pew</title>
+  </head>
+  <body>
+    <div class="game_container">
+      <div class="compteur_container">
+        <h2 class="compteur">Lifes<span id="lifeCompteur">2</span>/2</h2>
+        <button onclick="window.location.reload();" class="btn_start">
+          Replay !
+        </button>
+      </div>
+
+      <div class="container_canvas">
+        <canvas id="canvas"></canvas>
+      </div>
+    </div>
+
+    <div class="popup-content" id="popup-content">
+      <div class="gameOver_popup">
+        <h2 id="message-final">GameOver</h2>
+        <button class="replay-btn" id="replay-btn">Replay !</button>
+      </div>
+    </div>
+
+    <!-- <div id="">
+          <img src="Assets/images/planet1.png" id="planet1">
+          <img src="Assets/images/planet2.png" id="planet2">
+          <img src="Assets/images/planet3.png" id="planet3">
+          <img src="Assets/images/planet4.png" id="planet4">
+      </div>
+    </div> -->
+
+    <script src="Assets/js/script.js"></script>
+  </body>
+</html>
