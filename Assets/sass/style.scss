@@ -44,11 +44,13 @@ body {
       padding: 10px 40px;
       cursor: pointer;
     }
+
     .btn_start:active {
       transform: scale(0.9);
     }
   }
 }
+
 //popup pas encore été mis car manque de temps
 .popup-content {
   background-color: rgba(158, 24, 24, 0.192);
@@ -95,4 +97,6 @@ canvas {
   background: rgb(0, 0, 0);
   border: 3px solid red;
   border-radius: 5px;
+  height: 70vh;
+  width: 85vw;
 }

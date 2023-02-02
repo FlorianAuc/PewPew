@@ -1,54 +1,37 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: 0;
-          box-sizing: 0;
+  box-sizing: 0;
   overflow: hidden;
 }
 
 body {
-  background: #3d061f;
+  background: rgb(61, 6, 31);
   color: white;
 }
 
 .game_container {
   margin: 50px auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-
 .game_container .compteur_container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   border: 3px solid red;
   border-radius: 5px;
   margin-bottom: 15px;
   padding: 15px 20px;
 }
-
 .game_container .compteur_container .compteur {
   padding-right: 30vh;
   letter-spacing: 2px;
 }
-
 .game_container .compteur_container .compteur span {
   padding-left: 10px;
 }
-
 .game_container .compteur_container .btn_start {
   font-size: 20px;
   text-align: center;
@@ -59,10 +42,8 @@ body {
   padding: 10px 40px;
   cursor: pointer;
 }
-
 .game_container .compteur_container .btn_start:active {
-  -webkit-transform: scale(0.9);
-          transform: scale(0.9);
+  transform: scale(0.9);
 }
 
 .popup-content {
@@ -73,24 +54,17 @@ body {
   right: 0;
   left: 0;
   display: none;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
-
 .popup-content .GameOver {
   background: rgba(158, 24, 24, 0.192);
   color: white;
   border-radius: 5px;
-  -webkit-box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.192);
-          box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.192);
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.192);
   padding: 30px;
   text-align: center;
 }
-
 .popup-content .GameOver button {
   background: white;
   cursor: pointer;
@@ -98,27 +72,21 @@ body {
   margin-top: 10px;
   padding: 10px 40px;
   font-size: 20px;
-  -webkit-box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.192);
-          box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.192);
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.192);
 }
-
 .popup-content .GameOver button:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
-  -webkit-transition: 0.5s;
+  transform: scale(1.2);
   transition: 0.5s;
 }
-
 .popup-content .GameOver button:active {
-  -webkit-transform: scale(0.98);
-          transform: scale(0.98);
-  -webkit-transition: 0.2s;
+  transform: scale(0.98);
   transition: 0.2s;
 }
 
 canvas {
-  background: black;
+  background: rgb(0, 0, 0);
   border: 3px solid red;
   border-radius: 5px;
-}
-/*# sourceMappingURL=style.css.map */
+  height: 70vh;
+  width: 85vw;
+}/*# sourceMappingURL=style.css.map */
